@@ -9,18 +9,23 @@ que diga "si " si fue biciesto y "no " si no fue bisiesto, sin comillas.
 """
 
 
-def leap_yerar(year):
+def leap_years(year):
     ''' Función que dado un año devuelve como resultado si el año es bisiesto o no.
 
+    :Condiciones de la funcion: Numeros enteros mayores o iguales a 1800.
     :param year: Numero dado por el usuario el cual respresenta el año.
     :return: resultado de la identificación del año como bisiesto o no bisiesto.
     '''
 
-    if year % 4 == 0:
-        return 'Si'
-    return 'No'
+    #Control de flujo para validar si la funcion cumple las condiciones de ejecucion.
+    if type(year) == int and year >= 1800:
+        # Scrip de la funcion.
+        if year % 4 == 0:
+            return 'Si'
+        return 'No'
+    else:
+        return 'No cumple las condiciones de la funcion.'
 
-
-result = leap_yerar(2020)
-print(leap_yerar.__doc__)
+result = leap_years(2020)
+print(leap_years.__doc__)
 print(result)
