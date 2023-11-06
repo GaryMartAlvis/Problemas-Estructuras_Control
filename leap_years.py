@@ -9,7 +9,7 @@ que diga "si " si fue biciesto y "no " si no fue bisiesto, sin comillas.
 """
 
 
-def leap_years(year):
+def leap_years(year: int):
     ''' Función que dado un año devuelve como resultado si el año es bisiesto o no.
 
     :Condiciones de la funcion: Numeros enteros mayores o iguales a 1800.
