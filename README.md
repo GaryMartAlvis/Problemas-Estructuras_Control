@@ -1,5 +1,6 @@
 #Repositorio de problemas resueltos con python.
 Problemas de estructuras de contorl PY-FS-V2
+By Gary Yonathan Martinez Alvis
 
 Problema #1
 
