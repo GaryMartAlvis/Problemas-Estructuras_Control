@@ -20,3 +20,29 @@ consonante
 Entrada:La entrada consiste de una letra.
 Salida: En la salida escriba si es una letra minúscula o mayúscula. En  otra linea escriba si es vocal o consonante.
 """
+
+
+def character_classification(letter):
+    """ Función para clasificación de caracteres
+    :param letter:
+    :return: Clasificación de la letra
+    """
+
+    if letter.isalpha():
+        # Clasifica entre vocal y consonante
+        if letter.lower() in 'aeiou':
+            print("Vocal")
+        else:
+            print("Consonante")
+
+        # Clasifica entre Mayúscula y Minúscula
+        if letter.isupper():
+            print("Mayúscula")
+        else:
+            print("Minúscula")
+    else:
+        print("El caracter ingresado no es una letra")
+
+
+letter = input("Ingresa un caracter para clasificarlo: ")
+character_classification(letter)
